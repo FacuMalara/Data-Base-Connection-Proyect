@@ -1,0 +1,469 @@
+01:10:29 PM: DEBUG [connection.py:28] Pool connection succed
+01:10:29 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x000001ACC49FDBE0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:10:29 PM: DEBUG [cursor_del_pool.py:13] Cursor obtained successfuly
+01:10:29 PM: DEBUG [cursor_del_pool.py:22] Printing cursor: <cursor object at 0x000001ACC49E6F80; closed: 0>
+09:56:58 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+09:56:58 PM: DEBUG [connection.py:28] Pool connection succed
+09:56:58 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x000001364E459E00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+09:56:58 PM: DEBUG [cursor_del_pool.py:30] Inside with
+09:56:58 PM: DEBUG [cursor_del_pool.py:32] [(2, 'Karla', 'Gomez', 'kgomez@mail.com'), (4, 'Carlos', 'Lara', 'clara@mail.com'), (5, 'Carlos', 'Lara', 'clara@mail.com'), (6, '.', '.', '.'), (7, 'Carlos', 'Lara', 'clara@mail.com'), (8, 'Pedro', 'Najera', 'pnajera@mail.com'), (9, 'Alejandra', 'Tellez', 'atellez@mail.com'), (1, 'Juan', 'Perez', 'jperez@mail.com'), (10, 'Alejandra', 'Tellez', 'atellez@mail.com')]
+09:56:58 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+09:57:35 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+09:57:35 PM: DEBUG [connection.py:28] Pool connection succed
+09:57:35 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x0000023D96359E00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+09:57:35 PM: DEBUG [cursor_del_pool.py:30] Inside with
+09:57:35 PM: DEBUG [cursor_del_pool.py:32] [(2, 'Karla', 'Gomez', 'kgomez@mail.com'), (4, 'Carlos', 'Lara', 'clara@mail.com'), (5, 'Carlos', 'Lara', 'clara@mail.com'), (6, '.', '.', '.'), (7, 'Carlos', 'Lara', 'clara@mail.com'), (8, 'Pedro', 'Najera', 'pnajera@mail.com'), (9, 'Alejandra', 'Tellez', 'atellez@mail.com'), (1, 'Juan', 'Perez', 'jperez@mail.com'), (10, 'Alejandra', 'Tellez', 'atellez@mail.com')]
+09:57:35 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+09:57:35 PM: DEBUG [cursor_del_pool.py:23] Commit made
+09:57:35 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x0000023D96359E00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+09:58:07 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+09:58:08 PM: DEBUG [connection.py:28] Pool connection succed
+09:58:08 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x000001D8C62A9E00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+09:58:08 PM: DEBUG [cursor_del_pool.py:30] Inside with
+09:58:08 PM: DEBUG [cursor_del_pool.py:32] [(2, 'Karla', 'Gomez', 'kgomez@mail.com'), (4, 'Carlos', 'Lara', 'clara@mail.com'), (5, 'Carlos', 'Lara', 'clara@mail.com'), (6, '.', '.', '.'), (7, 'Carlos', 'Lara', 'clara@mail.com'), (8, 'Pedro', 'Najera', 'pnajera@mail.com'), (9, 'Alejandra', 'Tellez', 'atellez@mail.com'), (1, 'Juan', 'Perez', 'jperez@mail.com'), (10, 'Alejandra', 'Tellez', 'atellez@mail.com')]
+09:58:08 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+09:58:08 PM: DEBUG [cursor_del_pool.py:23] Commit made
+09:58:08 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x000001D8C62A9E00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:12:24 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+01:12:24 PM: DEBUG [connection.py:28] Pool connection succed
+01:12:24 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x000002387DE8DE00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:12:24 PM: DEBUG [user_dao.py:19] Executing code
+01:12:24 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+01:12:24 PM: ERROR [cursor_del_pool.py:20] Exception occured: <class 'psycopg2.errors.UndefinedColumn'> column "id_user" does not exist
+LINE 1: SELECT * FROM user ORDER BY id_user
+                                    ^
+HINT:  Perhaps you meant to reference the column "user.user".
+ <traceback object at 0x000002387DF1F080>
+01:12:24 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x000002387DE8DE00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:12:55 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+01:12:55 PM: DEBUG [connection.py:28] Pool connection succed
+01:12:55 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x000001B2A800DE00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:12:55 PM: DEBUG [user_dao.py:19] Executing code
+01:12:55 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+01:12:55 PM: ERROR [cursor_del_pool.py:20] Exception occured: <class 'psycopg2.errors.UndefinedColumn'> column "id_user" does not exist
+LINE 1: SELECT * FROM user ORDER BY id_user
+                                    ^
+HINT:  Perhaps you meant to reference the column "user.user".
+ <traceback object at 0x000001B2A809D5C0>
+01:12:55 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x000001B2A800DE00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:14:15 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+01:14:15 PM: DEBUG [connection.py:28] Pool connection succed
+01:14:15 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x00000247B184DE00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:14:15 PM: DEBUG [user_dao.py:19] Executing code
+01:14:15 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+01:14:15 PM: ERROR [cursor_del_pool.py:20] Exception occured: <class 'psycopg2.errors.UndefinedColumn'> column "id_user" does not exist
+LINE 1: SELECT * FROM user ORDER BY id_user
+                                    ^
+HINT:  Perhaps you meant to reference the column "user.user".
+ <traceback object at 0x00000247B18DD5C0>
+01:14:15 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x00000247B184DE00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:17:53 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+01:17:53 PM: DEBUG [connection.py:28] Pool connection succed
+01:17:53 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x000001812769DE00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:17:53 PM: DEBUG [user_dao.py:19] Executing code
+01:17:53 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+01:17:53 PM: ERROR [cursor_del_pool.py:20] Exception occured: <class 'psycopg2.errors.UndefinedColumn'> column "id_user" does not exist
+LINE 1: SELECT * FROM user ORDER BY id_user
+                                    ^
+HINT:  Perhaps you meant to reference the column "user.user".
+ <traceback object at 0x000001812772D5C0>
+01:17:53 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x000001812769DE00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+03:23:14 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+03:23:14 PM: DEBUG [connection.py:28] Pool connection succed
+03:23:14 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x0000019B0ED5DE00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+03:23:14 PM: DEBUG [user_dao.py:19] Executing code
+03:23:14 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+03:23:14 PM: ERROR [cursor_del_pool.py:20] Exception occured: <class 'psycopg2.errors.UndefinedColumn'> column "_id_user" does not exist
+LINE 1: SELECT * FROM user ORDER BY _id_user
+                                    ^
+ <traceback object at 0x0000019B0EDED5C0>
+03:23:14 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x0000019B0ED5DE00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+03:43:58 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+03:43:58 PM: DEBUG [connection.py:28] Pool connection succed
+03:43:58 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x000002196B97DE00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+03:43:58 PM: DEBUG [user_dao.py:19] Executing code
+03:43:58 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+03:43:58 PM: ERROR [cursor_del_pool.py:20] Exception occured: <class 'psycopg2.errors.UndefinedColumn'> column "id_user" does not exist
+LINE 1: SELECT * FROM user ORDER BY id_user
+                                    ^
+HINT:  Perhaps you meant to reference the column "user.user".
+ <traceback object at 0x000002196BA0D5C0>
+03:43:58 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x000002196B97DE00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+04:01:17 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+04:01:17 PM: DEBUG [connection.py:28] Pool connection succed
+04:01:17 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x000002317C6CDE00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+04:01:17 PM: DEBUG [user_dao.py:19] Executing code
+04:01:17 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+04:01:17 PM: ERROR [cursor_del_pool.py:20] Exception occured: <class 'psycopg2.errors.UndefinedColumn'> column "id_user" does not exist
+LINE 1: SELECT * FROM user ORDER BY id_user
+                                    ^
+HINT:  Perhaps you meant to reference the column "user.user".
+ <traceback object at 0x000002317C75D5C0>
+04:01:17 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x000002317C6CDE00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+04:03:44 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+04:03:44 PM: DEBUG [connection.py:28] Pool connection succed
+04:03:44 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x0000027B8606DE00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+04:03:44 PM: DEBUG [user_dao.py:19] Executing code
+04:03:44 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+04:03:44 PM: ERROR [cursor_del_pool.py:20] Exception occured: <class 'IndexError'> tuple index out of range <traceback object at 0x0000027B860FD900>
+04:03:44 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x0000027B8606DE00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+04:09:11 PM: DEBUG [user.py:42] 
+            Id User: 1, Username: facu123, Password: 123
+        
+04:09:11 PM: DEBUG [user.py:45] 
+            Id User: None, Username: facu123, Password: 123
+        
+04:09:22 PM: DEBUG [user.py:42] 
+            Id User: 1, Username: facu123, Password: 123
+        
+04:09:22 PM: DEBUG [user.py:45] 
+            Id User: None, Username: facu123, Password: 123
+        
+04:09:32 PM: DEBUG [user.py:42] 
+            Id User: 1, Username: facu123, Password: 123
+        
+04:09:32 PM: DEBUG [user.py:45] 
+            Id User: None, Username: facu123, Password: 123
+        
+04:10:42 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+04:10:42 PM: DEBUG [connection.py:28] Pool connection succed
+04:10:42 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x000001DC4686DE00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+04:10:42 PM: DEBUG [user_dao.py:19] Executing code
+04:10:42 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+04:10:42 PM: ERROR [cursor_del_pool.py:20] Exception occured: <class 'IndexError'> tuple index out of range <traceback object at 0x000001DC468FDA40>
+04:10:42 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x000001DC4686DE00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+10:30:48 AM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+10:30:48 AM: DEBUG [connection.py:28] Pool connection succed
+10:30:48 AM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x0000014B668ADE00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+10:30:48 AM: DEBUG [user_dao.py:19] Executing code
+10:30:48 AM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+10:30:48 AM: ERROR [cursor_del_pool.py:20] Exception occured: <class 'IndexError'> tuple index out of range <traceback object at 0x0000014B6693DA40>
+10:30:48 AM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x0000014B668ADE00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+10:31:30 AM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+10:31:30 AM: DEBUG [connection.py:28] Pool connection succed
+10:31:30 AM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x000001998722DE00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+10:31:30 AM: DEBUG [user_dao.py:19] Executing code
+10:31:30 AM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+10:31:30 AM: ERROR [cursor_del_pool.py:20] Exception occured: <class 'psycopg2.errors.UndefinedColumn'> column "id_user" does not exist
+LINE 1: SELECT * FROM user ORDER BY id_user
+                                    ^
+HINT:  Perhaps you meant to reference the column "user.user".
+ <traceback object at 0x00000199872BD580>
+10:31:30 AM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x000001998722DE00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+12:14:32 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+12:14:32 PM: DEBUG [connection.py:28] Pool connection succed
+12:14:32 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x00000267A082DE00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+12:14:32 PM: DEBUG [user_dao.py:19] Executing code
+12:14:32 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+12:14:32 PM: ERROR [cursor_del_pool.py:20] Exception occured: <class 'psycopg2.errors.UndefinedColumn'> column "id_user" does not exist
+LINE 1: SELECT * FROM user ORDER BY id_user
+                                    ^
+HINT:  Perhaps you meant to reference the column "user.user".
+ <traceback object at 0x00000267A08BD680>
+12:14:32 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x00000267A082DE00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+12:49:34 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+12:49:34 PM: DEBUG [connection.py:28] Pool connection succed
+12:49:34 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x0000026B7182DE00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+12:49:34 PM: DEBUG [user_dao.py:19] Executing code
+12:49:34 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+12:49:34 PM: ERROR [cursor_del_pool.py:20] Exception occured: <class 'psycopg2.errors.SyntaxError'> syntax error at or near ".0"
+LINE 1: SELECT * FROM user1.0 ORDER BY user_id
+                           ^
+ <traceback object at 0x0000026B718BD680>
+12:49:34 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x0000026B7182DE00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+12:51:07 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+12:51:07 PM: DEBUG [connection.py:28] Pool connection succed
+12:51:07 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x000002116F34DE00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+12:51:07 PM: DEBUG [user_dao.py:19] Executing code
+12:51:07 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+12:51:07 PM: ERROR [cursor_del_pool.py:20] Exception occured: <class 'psycopg2.errors.SyntaxError'> syntax error at or near ".0"
+LINE 1: SELECT * FROM user1.0 ORDER BY user_id
+                           ^
+ <traceback object at 0x000002116D71F400>
+12:51:07 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x000002116F34DE00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+12:52:14 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+12:52:14 PM: DEBUG [connection.py:28] Pool connection succed
+12:52:14 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x0000025AB772DE00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+12:52:14 PM: DEBUG [user_dao.py:19] Executing code
+12:52:14 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+12:52:14 PM: DEBUG [cursor_del_pool.py:23] Commit made
+12:52:14 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x0000025AB772DE00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+12:52:14 PM: DEBUG [user_dao.py:59] 
+            Id User: 1, Username: jperez, Password: 123
+        
+12:52:14 PM: DEBUG [user_dao.py:59] 
+            Id User: 2, Username: kgomez, Password: 456
+        
+01:45:43 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+01:45:43 PM: DEBUG [connection.py:28] Pool connection succed
+01:45:43 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x000001230C47DF10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:45:43 PM: DEBUG [user_dao.py:31] Executing the code
+01:45:43 PM: DEBUG [user_dao.py:34] User added: 
+            Id User: None, Username: santi, Password: 321
+        
+01:45:43 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+01:45:43 PM: DEBUG [cursor_del_pool.py:23] Commit made
+01:45:43 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x000001230C47DF10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:45:43 PM: DEBUG [user_dao.py:61] 1
+01:45:43 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+01:45:43 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x000001230C47DF10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:45:43 PM: DEBUG [user_dao.py:19] Executing code
+01:45:43 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+01:45:43 PM: DEBUG [cursor_del_pool.py:23] Commit made
+01:45:43 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x000001230C47DF10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:45:43 PM: DEBUG [user_dao.py:66] 
+            Id User: 1, Username: jperez, Password: 123
+        
+01:45:43 PM: DEBUG [user_dao.py:66] 
+            Id User: 2, Username: kgomez, Password: 456
+        
+01:45:43 PM: DEBUG [user_dao.py:66] 
+            Id User: 3, Username: santi, Password: 321
+        
+01:54:04 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+01:54:04 PM: DEBUG [connection.py:28] Pool connection succed
+01:54:04 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x000001E94155DF10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:54:04 PM: DEBUG [user_dao.py:40] Executing the code
+01:54:04 PM: DEBUG [user_dao.py:43] User updated: 
+            Id User: 1, Username: pep, Password: msan
+        
+01:54:04 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+01:54:04 PM: DEBUG [cursor_del_pool.py:23] Commit made
+01:54:04 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x000001E94155DF10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:54:04 PM: DEBUG [user_dao.py:61] 1
+01:54:04 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+01:54:04 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x000001E94155DF10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:54:04 PM: DEBUG [user_dao.py:31] Executing the code
+01:54:04 PM: DEBUG [user_dao.py:34] User added: 
+            Id User: None, Username: santi, Password: 321
+        
+01:54:04 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+01:54:04 PM: DEBUG [cursor_del_pool.py:23] Commit made
+01:54:04 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x000001E94155DF10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:54:04 PM: DEBUG [user_dao.py:66] 1
+01:54:04 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+01:54:04 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x000001E94155DF10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:54:04 PM: DEBUG [user_dao.py:19] Executing code
+01:54:04 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+01:54:04 PM: DEBUG [cursor_del_pool.py:23] Commit made
+01:54:04 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x000001E94155DF10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:54:04 PM: DEBUG [user_dao.py:71] 
+            Id User: 1, Username: pep, Password: msan
+        
+01:54:04 PM: DEBUG [user_dao.py:71] 
+            Id User: 2, Username: kgomez, Password: 456
+        
+01:54:04 PM: DEBUG [user_dao.py:71] 
+            Id User: 3, Username: santi, Password: 321
+        
+01:54:04 PM: DEBUG [user_dao.py:71] 
+            Id User: 4, Username: santi, Password: 321
+        
+01:54:54 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+01:54:54 PM: DEBUG [connection.py:28] Pool connection succed
+01:54:54 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x000001A9C35ADF10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:54:54 PM: DEBUG [user_dao.py:40] Executing the code
+01:54:54 PM: DEBUG [user_dao.py:43] User updated: 
+            Id User: 1, Username: pep, Password: msan
+        
+01:54:54 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+01:54:54 PM: DEBUG [cursor_del_pool.py:23] Commit made
+01:54:54 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x000001A9C35ADF10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:54:54 PM: DEBUG [user_dao.py:61] 1
+01:54:54 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+01:54:54 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x000001A9C35ADF10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:54:54 PM: DEBUG [user_dao.py:19] Executing code
+01:54:54 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+01:54:54 PM: DEBUG [cursor_del_pool.py:23] Commit made
+01:54:54 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x000001A9C35ADF10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:54:54 PM: DEBUG [user_dao.py:71] 
+            Id User: 1, Username: pep, Password: msan
+        
+01:54:54 PM: DEBUG [user_dao.py:71] 
+            Id User: 2, Username: kgomez, Password: 456
+        
+01:54:54 PM: DEBUG [user_dao.py:71] 
+            Id User: 3, Username: santi, Password: 321
+        
+01:54:54 PM: DEBUG [user_dao.py:71] 
+            Id User: 4, Username: santi, Password: 321
+        
+01:55:36 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+01:55:36 PM: DEBUG [connection.py:28] Pool connection succed
+01:55:36 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x0000022A0E7EDF10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:55:36 PM: DEBUG [user_dao.py:40] Executing the code
+01:55:36 PM: DEBUG [user_dao.py:43] User updated: 
+            Id User: 1, Username: pep, Password: msan
+        
+01:55:36 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+01:55:36 PM: DEBUG [cursor_del_pool.py:23] Commit made
+01:55:36 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x0000022A0E7EDF10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:55:36 PM: DEBUG [user_dao.py:61] 1
+01:55:36 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+01:55:36 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x0000022A0E7EDF10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:55:36 PM: DEBUG [user_dao.py:31] Executing the code
+01:55:36 PM: DEBUG [user_dao.py:34] User added: 
+            Id User: None, Username: santi, Password: 321
+        
+01:55:36 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+01:55:36 PM: DEBUG [cursor_del_pool.py:23] Commit made
+01:55:36 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x0000022A0E7EDF10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:55:36 PM: DEBUG [user_dao.py:66] 1
+01:55:36 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+01:55:36 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x0000022A0E7EDF10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:55:36 PM: DEBUG [user_dao.py:19] Executing code
+01:55:36 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+01:55:36 PM: DEBUG [cursor_del_pool.py:23] Commit made
+01:55:36 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x0000022A0E7EDF10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:55:36 PM: DEBUG [user_dao.py:71] 
+            Id User: 1, Username: pep, Password: msan
+        
+01:55:36 PM: DEBUG [user_dao.py:71] 
+            Id User: 2, Username: kgomez, Password: 456
+        
+01:55:36 PM: DEBUG [user_dao.py:71] 
+            Id User: 3, Username: santi, Password: 321
+        
+01:55:36 PM: DEBUG [user_dao.py:71] 
+            Id User: 4, Username: santi, Password: 321
+        
+01:55:36 PM: DEBUG [user_dao.py:71] 
+            Id User: 5, Username: santi, Password: 321
+        
+01:57:42 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+01:57:42 PM: DEBUG [connection.py:28] Pool connection succed
+01:57:42 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x000002698618DF10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:57:42 PM: DEBUG [user_dao.py:49] Executing the code
+01:57:42 PM: DEBUG [user_dao.py:52] User deleted: 
+            Id User: 4, Username: None, Password: None
+        
+01:57:42 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+01:57:42 PM: DEBUG [cursor_del_pool.py:23] Commit made
+01:57:42 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x000002698618DF10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:57:42 PM: DEBUG [user_dao.py:62] 1
+01:57:42 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+01:57:42 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x000002698618DF10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:57:42 PM: DEBUG [user_dao.py:19] Executing code
+01:57:42 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+01:57:42 PM: DEBUG [cursor_del_pool.py:23] Commit made
+01:57:42 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x000002698618DF10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:57:42 PM: DEBUG [user_dao.py:77] 
+            Id User: 1, Username: pep, Password: msan
+        
+01:57:42 PM: DEBUG [user_dao.py:77] 
+            Id User: 2, Username: kgomez, Password: 456
+        
+01:57:42 PM: DEBUG [user_dao.py:77] 
+            Id User: 3, Username: santi, Password: 321
+        
+01:57:42 PM: DEBUG [user_dao.py:77] 
+            Id User: 5, Username: santi, Password: 321
+        
+01:57:49 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+01:57:49 PM: DEBUG [connection.py:28] Pool connection succed
+01:57:49 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x000001E933EFDF10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:57:49 PM: DEBUG [user_dao.py:49] Executing the code
+01:57:49 PM: DEBUG [user_dao.py:52] User deleted: 
+            Id User: 5, Username: None, Password: None
+        
+01:57:49 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+01:57:49 PM: DEBUG [cursor_del_pool.py:23] Commit made
+01:57:49 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x000001E933EFDF10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:57:49 PM: DEBUG [user_dao.py:62] 1
+01:57:49 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+01:57:49 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x000001E933EFDF10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:57:49 PM: DEBUG [user_dao.py:19] Executing code
+01:57:49 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+01:57:49 PM: DEBUG [cursor_del_pool.py:23] Commit made
+01:57:49 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x000001E933EFDF10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:57:49 PM: DEBUG [user_dao.py:77] 
+            Id User: 1, Username: pep, Password: msan
+        
+01:57:49 PM: DEBUG [user_dao.py:77] 
+            Id User: 2, Username: kgomez, Password: 456
+        
+01:57:49 PM: DEBUG [user_dao.py:77] 
+            Id User: 3, Username: santi, Password: 321
+        
+01:58:08 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+01:58:08 PM: DEBUG [connection.py:28] Pool connection succed
+01:58:08 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x000001B69FE5DE00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:58:08 PM: DEBUG [user_dao.py:19] Executing code
+01:58:08 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+01:58:08 PM: DEBUG [cursor_del_pool.py:23] Commit made
+01:58:08 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x000001B69FE5DE00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:58:08 PM: DEBUG [user_dao.py:77] 
+            Id User: 1, Username: pep, Password: msan
+        
+01:58:08 PM: DEBUG [user_dao.py:77] 
+            Id User: 2, Username: kgomez, Password: 456
+        
+01:58:08 PM: DEBUG [user_dao.py:77] 
+            Id User: 3, Username: santi, Password: 321
+        
+03:32:45 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+03:32:46 PM: DEBUG [connection.py:28] Pool connection succed
+03:32:46 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x00000158C9FB1E00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+03:32:46 PM: DEBUG [user_dao.py:19] Executing code
+03:32:46 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+03:32:46 PM: DEBUG [cursor_del_pool.py:23] Commit made
+03:32:46 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x00000158C9FB1E00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+03:33:00 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+03:33:00 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x00000158C9FB1E00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+03:33:00 PM: DEBUG [user_dao.py:31] Executing the code
+03:33:00 PM: DEBUG [user_dao.py:34] User added: 
+            Id User: None, Username: fac, Password: 123
+        
+03:33:00 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+03:33:00 PM: DEBUG [cursor_del_pool.py:23] Commit made
+03:33:00 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x00000158C9FB1E00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+03:33:14 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+03:33:14 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x00000158C9FB1E00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+03:33:14 PM: DEBUG [user_dao.py:19] Executing code
+03:33:14 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+03:33:14 PM: DEBUG [cursor_del_pool.py:23] Commit made
+03:33:14 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x00000158C9FB1E00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+03:33:43 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+03:33:43 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x00000158C9FB1E00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+03:33:43 PM: DEBUG [user_dao.py:40] Executing the code
+03:33:43 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+03:33:43 PM: ERROR [cursor_del_pool.py:20] Exception occured: <class 'psycopg2.errors.InvalidTextRepresentation'> invalid input syntax for type integer: "asd"
+LINE 1: ...E user1 SET username='nar', password='6' WHERE user_id='asd'
+                                                                  ^
+ <traceback object at 0x00000158CA03F840>
+03:33:43 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x00000158C9FB1E00; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+03:36:29 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+03:36:29 PM: DEBUG [connection.py:28] Pool connection succed
+03:36:29 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x000001D07ABB9F10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+03:36:29 PM: DEBUG [user_dao.py:49] Executing the code
+03:36:29 PM: DEBUG [user_dao.py:52] User deleted: 
+            Id User: 6, Username: None, Password: None
+        
+03:36:29 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+03:36:29 PM: DEBUG [cursor_del_pool.py:23] Commit made
+03:36:29 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x000001D07ABB9F10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+03:36:38 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+03:36:38 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x000001D07ABB9F10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+03:36:38 PM: DEBUG [user_dao.py:19] Executing code
+03:36:38 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+03:36:38 PM: DEBUG [cursor_del_pool.py:23] Commit made
+03:36:38 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x000001D07ABB9F10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+03:43:33 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+03:43:33 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x000001D07ABB9F10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+03:43:33 PM: DEBUG [user_dao.py:40] Executing the code
+03:43:33 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+03:43:33 PM: ERROR [cursor_del_pool.py:20] Exception occured: <class 'psycopg2.errors.InvalidTextRepresentation'> invalid input syntax for type integer: "pe"
+LINE 1: ...TE user1 SET username='msa', password='1' WHERE user_id='pe'
+                                                                   ^
+ <traceback object at 0x000001D07AC4E280>
+03:43:33 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x000001D07ABB9F10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+03:45:08 PM: DEBUG [cursor_del_pool.py:11] Beggining of with's method __enter__
+03:45:08 PM: DEBUG [connection.py:28] Pool connection succed
+03:45:08 PM: DEBUG [connection.py:39] Connection stablished from pool: <connection object at 0x0000026093AF9F10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+03:45:08 PM: DEBUG [user_dao.py:40] Executing the code
+03:45:08 PM: DEBUG [user_dao.py:43] User updated: 
+            Id User: 1, Username: pepe, Password: marysanchez
+        
+03:45:08 PM: DEBUG [cursor_del_pool.py:17] Beggining of with's method __exit__
+03:45:08 PM: DEBUG [cursor_del_pool.py:23] Commit made
+03:45:08 PM: DEBUG [connection.py:45] Connection object has been set free: <connection object at 0x0000026093AF9F10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
